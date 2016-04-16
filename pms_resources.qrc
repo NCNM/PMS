@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>door_open.png</file>
+        <file>education.png</file>
+        <file>health.png</file>
+        <file>qip_eating.png</file>
+        <file>setting_tools.png</file>
+        <file>speedometer.png</file>
+        <file>banner.png</file>
+        <file>bg_sidemenu.png</file>
+        <file>sidebar_header.png</file>
+        <file>sidebar_close.png</file>
+        <file>sidebar_unpin.png</file>
+        <file>calendar.png</file>
+        <file>banner_pressed.png</file>
+        <file>doge.jpeg</file>
+        <file>banner_selected.png</file>
+    </qresource>
+</RCC>
