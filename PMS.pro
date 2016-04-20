@@ -13,11 +13,32 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    dashboardwindow.cpp \
+    healthcarewindow.cpp \
+    diningwindow.cpp \
+    rehabform.cpp \
+    entryreleaseform.cpp \
+    managementwindow.cpp \
+    loginwindow.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    dashboardwindow.h \
+    healthcarewindow.h \
+    diningwindow.h \
+    rehabform.h \
+    entryreleaseform.h \
+    managementwindow.h \
+    loginwindow.h
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+    dashboardwindow.ui \
+    healthcarewindow.ui \
+    diningwindow.ui \
+    rehabform.ui \
+    entryreleaseform.ui \
+    managementwindow.ui \
+    loginwindow.ui
 
 RESOURCES += \
     pms_resources.qrc
