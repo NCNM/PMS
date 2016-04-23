@@ -249,7 +249,7 @@ QToolButton#toolButton:checked {
            </widget>
           </item>
           <item>
-           <widget class="QToolButton" name="toolButton_7">
+           <widget class="QToolButton" name="toolButton_mng">
             <property name="minimumSize">
              <size>
               <width>90</width>
@@ -300,7 +300,7 @@ QToolButton#toolButton:checked {
            </widget>
           </item>
           <item>
-           <widget class="QToolButton" name="toolButton_2">
+           <widget class="QToolButton" name="toolButton_rehab">
             <property name="minimumSize">
              <size>
               <width>90</width>
@@ -351,7 +351,7 @@ QToolButton#toolButton:checked {
            </widget>
           </item>
           <item>
-           <widget class="QToolButton" name="toolButton_3">
+           <widget class="QToolButton" name="toolButton_etrr">
             <property name="minimumSize">
              <size>
               <width>90</width>
@@ -402,7 +402,7 @@ QToolButton#toolButton:checked {
            </widget>
           </item>
           <item>
-           <widget class="QToolButton" name="toolButton_4">
+           <widget class="QToolButton" name="toolButton_Healthcare">
             <property name="minimumSize">
              <size>
               <width>90</width>
@@ -453,7 +453,7 @@ QToolButton#toolButton:checked {
            </widget>
           </item>
           <item>
-           <widget class="QToolButton" name="toolButton_5">
+           <widget class="QToolButton" name="toolButton_Dining">
             <property name="minimumSize">
              <size>
               <width>90</width>
@@ -497,7 +497,7 @@ QToolButton#toolButton:checked {
            </widget>
           </item>
           <item>
-           <widget class="QToolButton" name="toolButton_6">
+           <widget class="QToolButton" name="toolButton_Dashboard">
             <property name="minimumSize">
              <size>
               <width>90</width>

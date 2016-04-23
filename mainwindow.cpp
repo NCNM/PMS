@@ -23,7 +23,7 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::on_toolButton_6_clicked(bool checked)
+void MainWindow::on_toolButton_Dashboard_clicked(bool checked)
 {
     if (checked == true) {
        DashboardWindow *dashboard = new DashboardWindow;
@@ -33,7 +33,18 @@ void MainWindow::on_toolButton_6_clicked(bool checked)
     }
 }
 
-void MainWindow::on_toolButton_4_clicked(bool checked)
+void MainWindow::on_actionTest_login_triggered()
+{
+    LoginWindow *lgn = new LoginWindow;
+    lgn->show();
+}
+
+void MainWindow::on_toolButton_clicked(bool checked)
+{
+
+}
+
+void MainWindow::on_toolButton_Healthcare_clicked(bool checked)
 {
     if (checked == true) {
        HealthcareWindow *healthcare = new HealthcareWindow;
@@ -43,7 +54,7 @@ void MainWindow::on_toolButton_4_clicked(bool checked)
     }
 }
 
-void MainWindow::on_toolButton_5_clicked(bool checked)
+void MainWindow::on_toolButton_Dining_clicked(bool checked)
 {
     if (checked == true) {
        DiningWindow *dining = new DiningWindow;
@@ -53,17 +64,7 @@ void MainWindow::on_toolButton_5_clicked(bool checked)
     }
 }
 
-void MainWindow::on_toolButton_2_clicked(bool checked)
-{
-    if (checked == true) {
-       RehabForm *rehab = new RehabForm;
-       ui->mdiArea->addSubWindow(rehab, Qt::CustomizeWindowHint | Qt::Tool | Qt::WindowTitleHint);
-       rehab->showMaximized();
-       rehab->activateWindow();
-    }
-}
-
-void MainWindow::on_toolButton_3_clicked(bool checked)
+void MainWindow::on_toolButton_etrr_clicked(bool checked)
 {
     if (checked == true) {
        EntryReleaseForm *etrr = new EntryReleaseForm;
@@ -73,7 +74,17 @@ void MainWindow::on_toolButton_3_clicked(bool checked)
     }
 }
 
-void MainWindow::on_toolButton_7_clicked(bool checked)
+void MainWindow::on_toolButton_rehab_clicked(bool checked)
+{
+    if (checked == true) {
+       RehabForm *rehab = new RehabForm;
+       ui->mdiArea->addSubWindow(rehab, Qt::CustomizeWindowHint | Qt::Tool | Qt::WindowTitleHint);
+       rehab->showMaximized();
+       rehab->activateWindow();
+    }
+}
+
+void MainWindow::on_toolButton_mng_clicked(bool checked)
 {
     if (checked == true) {
        ManagementWindow *mng = new ManagementWindow;
@@ -81,10 +92,4 @@ void MainWindow::on_toolButton_7_clicked(bool checked)
        mng->showMaximized();
        mng->activateWindow();
     }
-}
-
-void MainWindow::on_actionTest_login_triggered()
-{
-    LoginWindow *lgn = new LoginWindow;
-    lgn->show();
 }
