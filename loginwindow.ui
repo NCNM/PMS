@@ -17,10 +17,7 @@
    <iconset resource="pms_resources.qrc">
     <normaloff>:/images/doge.jpeg</normaloff>:/images/doge.jpeg</iconset>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout">
-   <property name="spacing">
-    <number>0</number>
-   </property>
+  <layout class="QGridLayout" name="gridLayout">
    <property name="leftMargin">
     <number>0</number>
    </property>
@@ -33,7 +30,7 @@
    <property name="bottomMargin">
     <number>0</number>
    </property>
-   <item>
+   <item row="0" column="0">
     <widget class="QFrame" name="frame">
      <property name="styleSheet">
       <string notr="true">QFrame {
@@ -55,7 +52,7 @@ color: #333;
       <property name="geometry">
        <rect>
         <x>170</x>
-        <y>60</y>
+        <y>90</y>
         <width>271</width>
         <height>31</height>
        </rect>
@@ -74,7 +71,7 @@ color: #333;
       <property name="geometry">
        <rect>
         <x>170</x>
-        <y>120</y>
+        <y>150</y>
         <width>271</width>
         <height>31</height>
        </rect>
@@ -96,7 +93,7 @@ color: #333;
       <property name="geometry">
        <rect>
         <x>90</x>
-        <y>70</y>
+        <y>100</y>
         <width>61</width>
         <height>16</height>
        </rect>
@@ -109,7 +106,7 @@ color: #333;
       <property name="geometry">
        <rect>
         <x>90</x>
-        <y>130</y>
+        <y>160</y>
         <width>61</width>
         <height>16</height>
        </rect>
@@ -118,9 +115,44 @@ color: #333;
        <string>Password:</string>
       </property>
      </widget>
+     <widget class="QPlainTextEdit" name="plainTextEdit_3">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>30</y>
+        <width>271</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="plainText">
+       <string>localhost</string>
+      </property>
+      <property name="placeholderText">
+       <string>IP/Host name</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>40</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Host:</string>
+      </property>
+     </widget>
     </widget>
    </item>
-   <item>
+   <item row="1" column="0">
     <widget class="QFrame" name="frame_5">
      <property name="minimumSize">
       <size>
@@ -263,7 +295,6 @@ stop: 0.9 #4c4c4c, stop: 1 #333333);
         <property name="frameShadow">
          <enum>QFrame::Raised</enum>
         </property>
-        <zorder>checkBox</zorder>
        </widget>
       </item>
       <item>
