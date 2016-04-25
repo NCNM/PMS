@@ -4,7 +4,6 @@
 #include <QMessageBox>
 #include <QSqlError>
 #include <QSqlQuery>
-#include <QDebug>
 
 LoginWindow::LoginWindow(QWidget *parent) :
     QWidget(parent),
@@ -36,20 +35,15 @@ void LoginWindow::on_pushButton_5_clicked()
         {
             QString ID = ui->plainTextEdit_ID->toPlainText();
             QString pass = ui->plainTextEdit_passID->toPlainText();
-            QString QSQuery = "SELECT * FROM ACCOUNT WHERE ID = '" + ID + "' AND PASS = '" + pass + "'";
-
+            QString QSQuery = "SELECT * FROM ACCOUNT WHERE ID = " + ID + " AND PASS = " + pass;
             QSqlQuery query(db);
-            query.exec(QSQuery);            
+            query.exec(QSQuery);
 
-            qDebug() << QSQuery;
-
-            if (query.numRowsAffected() != 1)
+            if (query.isActive())
             {
                 QMessageBox::critical(this, "Error", "This ID or password does not exist!");
                 return;
             }
-
-
 
             //succes
             this->close();
