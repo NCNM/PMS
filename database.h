@@ -2,21 +2,19 @@
 #define DATABASE_H
 
 #include <QSqlDatabase>
-
-class database
+#include <QMessageBox>
+class Database
 {
 private:
-    QString mHostname;
-    QString mUsername;
-    QString mPassword;
-    int mPort;
-
-    QSqlDatabase mDb;
-
-    bool init();
+    static Database * instance;
+    Database(){}
 public:
-    database(QString hostname, QString username, QString password, int port);
+    static Database * init(QString hostname, QString username, QString password, int port);
+    QSqlDatabase getDatabase();
+    QSqlDatabase mDb;
+    void Release();
 };
+
 
 #endif // DATABASE_H
 

@@ -7,6 +7,8 @@
 #include "entryreleaseform.h"
 #include "managementwindow.h"
 #include "loginwindow.h"
+#include "database.h"
+#include <QMessageBox>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),

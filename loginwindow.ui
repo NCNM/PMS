@@ -30,7 +30,7 @@
    <property name="bottomMargin">
     <number>0</number>
    </property>
-   <item row="2" column="0">
+   <item row="3" column="0">
     <widget class="QFrame" name="frame_5">
      <property name="minimumSize">
       <size>
@@ -219,7 +219,7 @@ stop: 0.9 #4c4c4c, stop: 1 #333333);
      </layout>
     </widget>
    </item>
-   <item row="1" column="0">
+   <item row="2" column="0">
     <widget class="QFrame" name="frame">
      <property name="styleSheet">
       <string notr="true">QFrame {
@@ -237,7 +237,7 @@ color: #333;
      <property name="frameShadow">
       <enum>QFrame::Raised</enum>
      </property>
-     <widget class="QPlainTextEdit" name="plainTextEdit">
+     <widget class="QPlainTextEdit" name="plainTextEdit_ID">
       <property name="geometry">
        <rect>
         <x>90</x>
@@ -253,10 +253,10 @@ color: #333;
        <enum>QFrame::Plain</enum>
       </property>
       <property name="placeholderText">
-       <string>my_name</string>
+       <string>my_ID</string>
       </property>
      </widget>
-     <widget class="QPlainTextEdit" name="plainTextEdit_2">
+     <widget class="QPlainTextEdit" name="plainTextEdit_passID">
       <property name="geometry">
        <rect>
         <x>90</x>
@@ -288,7 +288,7 @@ color: #333;
        </rect>
       </property>
       <property name="text">
-       <string>Username:</string>
+       <string>ID</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_2">
@@ -301,10 +301,10 @@ color: #333;
        </rect>
       </property>
       <property name="text">
-       <string>Password:</string>
+       <string>Password</string>
       </property>
      </widget>
-     <widget class="QPlainTextEdit" name="plainTextEdit_3">
+     <widget class="QPlainTextEdit" name="plainTextEdit_username">
       <property name="geometry">
        <rect>
         <x>390</x>
@@ -336,7 +336,7 @@ color: #333;
        </rect>
       </property>
       <property name="text">
-       <string>User name</string>
+       <string>Username</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_4">
@@ -349,10 +349,10 @@ color: #333;
        </rect>
       </property>
       <property name="text">
-       <string>Host:</string>
+       <string>Host</string>
       </property>
      </widget>
-     <widget class="QPlainTextEdit" name="plainTextEdit_4">
+     <widget class="QPlainTextEdit" name="plainTextEdit_localhost">
       <property name="geometry">
        <rect>
         <x>390</x>
@@ -387,7 +387,7 @@ color: #333;
        <string>Password</string>
       </property>
      </widget>
-     <widget class="QPlainTextEdit" name="plainTextEdit_5">
+     <widget class="QPlainTextEdit" name="plainTextEdit_pass">
       <property name="geometry">
        <rect>
         <x>390</x>
@@ -409,7 +409,7 @@ color: #333;
        <string>Password</string>
       </property>
      </widget>
-     <widget class="QPlainTextEdit" name="plainTextEdit_6">
+     <widget class="QPlainTextEdit" name="plainTextEdit_port">
       <property name="geometry">
        <rect>
         <x>390</x>
@@ -442,6 +442,19 @@ color: #333;
       </property>
       <property name="text">
        <string>Port</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_connect">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>260</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Connect</string>
       </property>
      </widget>
     </widget>
