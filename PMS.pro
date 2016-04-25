@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -20,7 +20,8 @@ SOURCES += main.cpp\
     rehabform.cpp \
     entryreleaseform.cpp \
     managementwindow.cpp \
-    loginwindow.cpp
+    loginwindow.cpp \
+    database.cpp
 
 HEADERS  += mainwindow.h \
     dashboardwindow.h \
@@ -29,7 +30,8 @@ HEADERS  += mainwindow.h \
     rehabform.h \
     entryreleaseform.h \
     managementwindow.h \
-    loginwindow.h
+    loginwindow.h \
+    database.h
 
 FORMS    += mainwindow.ui \
     dashboardwindow.ui \

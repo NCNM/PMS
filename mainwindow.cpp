@@ -16,6 +16,9 @@ MainWindow::MainWindow(QWidget *parent) :
     centralWidget()->layout()->setSpacing(0);
     centralWidget()->layout()->setContentsMargins(0, 0, 0, 0);
     centralWidget()->layout()->setSizeConstraint(QLayout::SetMaximumSize);
+
+    LoginWindow *lgn = new LoginWindow;
+    lgn->show();
 }
 
 MainWindow::~MainWindow()
