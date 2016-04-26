@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "database.h"
 
 namespace Ui {
 class MainWindow;
@@ -16,19 +17,21 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_toolButton_6_clicked(bool checked);
-
-    void on_toolButton_4_clicked(bool checked);
-
-    void on_toolButton_5_clicked(bool checked);
-
-    void on_toolButton_2_clicked(bool checked);
-
-    void on_toolButton_3_clicked(bool checked);
-
-    void on_toolButton_7_clicked(bool checked);
-
     void on_actionTest_login_triggered();
+
+    void on_toolButton_Dashboard_clicked(bool checked);
+
+    void on_toolButton_clicked(bool checked);
+
+    void on_toolButton_Healthcare_clicked(bool checked);
+
+    void on_toolButton_Dining_clicked(bool checked);
+
+    void on_toolButton_etrr_clicked(bool checked);
+
+    void on_toolButton_rehab_clicked(bool checked);
+
+    void on_toolButton_mng_clicked(bool checked);
 
 private:
     Ui::MainWindow *ui;

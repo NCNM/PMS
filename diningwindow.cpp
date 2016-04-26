@@ -1,5 +1,6 @@
 #include "diningwindow.h"
 #include "ui_diningwindow.h"
+#include <QSqlDatabase>
 
 DiningWindow::DiningWindow(QWidget *parent) :
     QWidget(parent),
